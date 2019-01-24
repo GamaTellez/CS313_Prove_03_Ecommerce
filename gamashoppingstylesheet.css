@@ -1,0 +1,106 @@
+#mainTitle {
+    text-align: center;
+    font-size: 50px;
+}
+
+#mainTitleDiv {
+    position:absolute;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(90deg, #0D832C , #F6FBF7 , #C70039);
+    font-style: italic;
+}
+
+#shoppingCartButton {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-right: 40px;
+    background-color: transparent;
+    border-color: transparent;
+    background-image: url(shoppingImages/shopping_cart52.png);
+    background-repeat: no-repeat;
+    border: 0;
+    background-size: cover;
+}
+
+#shoppingCartButton:before {
+  content: attr(data-quantity);
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  background: rgb(67, 151, 232);
+  border: 1px solid #FFF;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  color: #FFF;
+  position: absolute;
+  top: -7px;
+  left: -7px;
+}
+
+#shoppingCartButton.badgeTopRight:before {
+  left: auto;
+  right: -7px;
+}
+
+
+#itemSelectionTitle {
+    position: absolute;
+    float:left;
+    padding-top: 80px;
+    font-size: 20px;
+}
+
+#itemNameLabel {
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}
+
+#itemSelectedImage {
+  width: 300px;
+  height: 300px;
+  display:absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ecommerceFormDiv {
+  padding-top: 160px;
+  text-align: center;
+}
+
+#itemSelection {
+  position: relative;
+  padding-top: 10px; 
+}
+
+input {
+  width: 30px;
+  height: 30px;
+}
+
+#totalHr {
+  width: 30%;
+  align-self: center;
+  height: 5px;
+  background-color: gray;
+}
+
+#totalLabel {
+  padding-left: 30px;
+}
+
+#checkoutButton {
+  margin-top: 50px;
+  border: none;
+  text-align: center;
+  width: 300px;
+  height: 50px;
+  display: inline-block;
+  font-size: 30px;
+}
