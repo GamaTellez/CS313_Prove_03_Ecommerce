@@ -75,21 +75,43 @@ function resetButtonClicked() {
     total = 0;
 }
 
+function openCheckoutPage(chur, che, cru, sab, ran, tot) {
+    window.location.href = "cheackout.php?rancheritos=" + ran + 
+                            "&churrumais=" + chur +
+                            "&chetos=" + che + 
+                            "&crujitos=" + cru + 
+                            "&sabritones=" + sab + 
+                            "&total=" + tot; 
+}
+
 function openReviewOrderPage() {
   window.location.href = "orderreview.php?rancheritos=" + rancheritos + 
                           "&churrumais=" + churrumais +
                           "&chetos=" + chetos + 
                           "&crujitos=" + crujitos + 
                           "&sabritones=" + sabritones + 
-                          "&total=" + total;
-
+                          "&total=" + total; 
 }
 
-function checkoutButtonPressed() {
-  window.location.href = "checkout.php?rancheritos=" + rancheritos + 
-                          "&churrumais=" + churrumais +
-                          "&chetos=" + chetos + 
-                          "&crujitos=" + crujitos + 
-                          "&sabritones=" + sabritones + 
-                          "&total=" + total;
-}
+function placeOrderButtonTapped(chur, che, cru, sab, ran, tot) {
+   var userFirstName = document.getElementById("userFirstName").value;
+   var userLastName = document.getElementById("userLastName").value;
+   var userAddress = document.getElementById("userAddress").value;
+   var userState = document.getElementById("userState").value;
+   var userCity = document.getElementById("userCity").value;
+   var userZipCode = document.getElementById("userZipCode").value;
+
+  var message = "Thank you for your order " + userFirstName + "\n" +
+                "your package containing the following will arrive soon:\n" +
+                chur + " churrumais\n" +
+                ran +  " rancheritos\n" +
+                che + " cheetos\n" +
+                cru + " crujitos\n" +
+                sab + " sabritones\n" +
+                "to the following Address: \n" +
+                userFirstName + " " + userLastName + "\n" +
+                userAddress + ", " + userCity + "\n" +  
+                userState + ", " + userZipCode; 
+  alert(message);
+  window.location = "gamashopping.php";
+  }

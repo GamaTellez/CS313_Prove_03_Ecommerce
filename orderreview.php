@@ -10,6 +10,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="gamashoppingstylesheet.css">
+        <script type="text/jscript" src="gamashopping.js"></script>
         <title>Gama's Shop!</title>
         <div id="mainTitleDiv">
             <h3 id="mainTitle"> The best of Mexico coming to you!</h3>
@@ -84,8 +85,8 @@
                 <tr>
                     <th></th>
                     <th></th>
-                    <th align="right">Total:</th>
-                    <th align="right">
+                    <th align="center">Total =</th>
+                    <th align="center">
                         <?php
                         echo "$ ".$total;
                         ?>
@@ -96,9 +97,15 @@
         </div> 
         <hr id="totalHr">
         <div id="orderOptions">
-            <button id="returnButton"> Return</button>
-            <!-- <button id="checkoutButton"> Continue to checkout</button> -->
-            <a href="cheackout.php" id="checkoutButton">Continue to Checkout</a>
+            <button id="returnButton" onclick="goBack()">Return</button>
+            <script>
+                function goBack() {
+                    window.history.back();
+                }
+            </script>
+            <button id="checkoutbutton" onclick="openCheckoutPage(<?php echo $cheetos?>, <?php echo $rancheritos?>,
+                                                                         <?php echo $churrumais?>, <?php echo $crujitos?>,
+                                                             <?php echo $sabritones?>, <?php echo $total?>)">Continue to Checkout</button>
         </div>
     </body>
 </html>
