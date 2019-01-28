@@ -59,7 +59,6 @@ function switchTreatImage(inputId) {
   document.getElementById("itemSelectedImage").src = imagesrc;
 }
 
-
 function resetButtonClicked() {
     document.getElementById("totalLabel").innerHTML = "$ 0.00";
     document.getElementById("shoppingCartButton").dataset.quantity = 0;
@@ -74,4 +73,23 @@ function resetButtonClicked() {
     crujitos = 0;
     sabritones = 0;
     total = 0;
+}
+
+function openReviewOrderPage() {
+  window.location.href = "orderreview.php?rancheritos=" + rancheritos + 
+                          "&churrumais=" + churrumais +
+                          "&chetos=" + chetos + 
+                          "&crujitos=" + crujitos + 
+                          "&sabritones=" + sabritones + 
+                          "&total=" + total;
+
+}
+
+function checkoutButtonPressed() {
+  window.location.href = "checkout.php?rancheritos=" + rancheritos + 
+                          "&churrumais=" + churrumais +
+                          "&chetos=" + chetos + 
+                          "&crujitos=" + crujitos + 
+                          "&sabritones=" + sabritones + 
+                          "&total=" + total;
 }

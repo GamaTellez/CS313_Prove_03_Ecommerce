@@ -95,12 +95,64 @@ input {
   padding-left: 30px;
 }
 
-#checkoutButton {
+#clearButton {
   margin-top: 50px;
-  border: none;
   text-align: center;
   width: 300px;
   height: 50px;
   display: inline-block;
   font-size: 30px;
+}
+
+/* ORDER REVIEW PAGE */
+#orderReviewTableView {
+  padding-top: 200px;
+}
+
+#orderStatus {
+  border-collapse: collapse;
+  margin: 0px auto;
+}
+
+#orderStatus,td,th {
+  border: 1px solid black;
+  width: 500px;
+}
+
+#headerCell {
+  height: 50px;
+}
+
+#checkoutButton {
+  margin: 0% auto;
+  width: 300px;
+  height: 50px;
+  display: inline-block;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#returnButton {
+  margin: 0% auto;
+  width: 300px;
+  height: 50px;
+  display: inline-block;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#orderOptions {
+  text-align: center;
+}
+
+#checkoutbutton {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
 }

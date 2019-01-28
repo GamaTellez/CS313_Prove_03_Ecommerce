@@ -61,71 +61,15 @@
       <hr id="totalHr">
 
       <div id="itemSelection" class="block">
-        <button data-quantity="0" class="badgeTopRight" id="shoppingCartButton"></button>
+        <button data-quantity="0" class="badgeTopRight" id="shoppingCartButton" onclick="openReviewOrderPage()"></button>
         <label id="itemNameLabel">Total</label>
         <label id="totalLabel">$ 0.00</label>
       </div>
 
       <hr id="totalHr">
-      <!-- <button id="checkoutButton" onclick="checkoutButtonClicked()"> Checkout</button> -->
-      <button id="checkoutButton" onclick="resetButtonClicked()"> Clear</button>
+      <button id="clearButton" onclick="resetButtonClicked()"> Clear</button>
     </div> <!--ecommerceFormDiv -->
 
   </body>
 </html>
 
-<!-- <div>
-        <form id="orderCheckoutForm" action="purchaseReview.php" method="POST">
-          Name:
-          <br>
-              <input type="text" id="fname" name="inputName" style="width:300px;">
-          </br>
-
-          Address:
-          <br>
-            <input type="text" id="address" name="inputAddress" style="width:300px;">
-          </br>
-
-          Phone:
-          <br>
-            <input type="text" id="phone" name="inputPhoneNumber" style="width:300px;">
-          </br>
-
-          Credit Card Number:
-          <br>
-            <input type="text" id="creditCardNumber" name="inputCCN" style="width:300px;">
-          </br>
-          <select id="monthDropDown">
-            <option>Month</option>
-            <option value="January">January</option>
-            <option value="February">February</option>
-            <option value="March">March</option>
-            <option value="April">April</option>
-            <option value="May">May</option>
-            <option value="June">June</option>
-            <option value="July">July</option>
-            <option value="August">August</option>
-            <option value="September">September</option>
-            <option value="October">October</option>
-            <option value="November">November</option>
-            <option value="December">December</option>
-          </select>
-
-          <select id="yearDropDown">
-            <option>Year</option>
-            <option value="2018">2018</option>
-            <option value="2019">2019</option>
-            <option value="2020">2020</option>
-            <option value="2021">2021</option>
-            <option value="2022">2022</option>
-            <option value="2023">2023</option>
-            <option value="2024">2024</option>
-            <option value="2025">2025</option>
-            <option value="2026">2026</option>
-            <option value="2027">2030</option>
-            <option value="2028">2031</option>
-            <option value="2029">2032</option>
-          </select>
-
-        </form>
-      </div> -->
